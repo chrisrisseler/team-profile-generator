@@ -4,6 +4,7 @@ const Employee = require("./lib/Employee")
 const Manager = require("./lib/Manager")
 const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
+const renderHtml = require("./src/template")
 
 const teamArray = []
 
@@ -77,11 +78,6 @@ const selectEmployee = [{
     choices: ["Add Engineer", "Add Intern", "Build team"]
 }]
 
-// function writeToFile(fileName, data) {
-//     fs.writeFile(fileName, data, (err) =>
-//         err ? console.log(err) : console.log('Success!')
-//     )
-// }
 
 function init() {
     inquirer.prompt(ManagerQuestions)
@@ -132,12 +128,10 @@ function addEngineer() {
 
 
 function buildTeam() {
-    teamArray.forEach((employee) => {
 
 
-
-    })
-
+    fs.writeFileSync("index.html", renderHtml(teamArray), "utf-8"
+    )
 
 }
 
