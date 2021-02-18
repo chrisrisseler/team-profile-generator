@@ -14,6 +14,7 @@
   ## Description
   
   This is a node.js app that will let you generate team members based upon the data that you provide. You have to enter some basic information and it will output an HTML document to keep track of your team.
+
   
   ## Installation
   
@@ -22,6 +23,8 @@
   ## Usage
   
   To use the app, in the terminal type node index.js and then answer the questions that is asked. It will have you enter information, then pick either a new team member, or build the team. When you select build team, it will output your html file for you.
+
+  An example of the app running can be found here [Google Drive](https://drive.google.com/file/d/1W0TzqkUVsU0VBkIODdCNmO887UDhwCWU/view)
   
   ## Contribution
   

@@ -1,4 +1,4 @@
-const Intern = require("Intern")
+const Intern = require("../lib/Intern")
 
 describe("intern class", () => {
     it("Should create an object", () => {
